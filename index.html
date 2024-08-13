@@ -1,1 +1,96 @@
-the page set to be active only for 1 hour 
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- A pen by Developer Rahul  -->
+<style>
+  img {
+    width: 50%;
+    height: 50%;
+    
+    object-fit: cover;
+  }
+  audio {
+    display: none;
+  }
+  
+</style>
+
+<audio id="background-music" src="/images/Jaane-Kyun-Full-Video-Dostana-John-Abhishek-Priyanka-Vishal-Dadlani-Vishal-Shekhar.mp3" loop>
+  Your browser does not support the audio element.
+</audio>
+
+<!-- JavaScript to handle autoplay policies -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const audio = document.getElementById('background-music');
+      
+      // Attempt to play audio and handle potential errors
+      function attemptPlay() {
+          audio.play().catch(error => {
+              console.log('Autoplay is blocked, attempting to resume playback on user interaction.');
+          });
+      }
+
+      // Attempt to play immediately
+      attemptPlay();
+
+      // Handle user interaction to play audio if autoplay is blocked
+      window.addEventListener('click', attemptPlay);
+      window.addEventListener('keydown', attemptPlay);
+      window.addEventListener('touchstart', attemptPlay);
+  });
+</script>
+<div class="paper heart">
+
+</div>
+
+  
+<div class="paper image">
+  <p><strong>And Happiest Bithday to you once again  😘✌️</strong> </p>
+    <p><strong>Hope this bond stays forever :)</strong></p>
+   <img src="images/friend.png" style="padding-left: 25%;">
+</div>
+
+<div class="paper image"  style="overflow: auto;">
+  <p</p>
+  <span>  <img src="images/2jpg.jpg"  />
+    <img src="images/3.jpg"  style="float: left;"/>
+
+  </span>
+  <p><strong>we have to take more pics 😭 anyways here's some my best memories with you </strong></p>
+</div>
+
+<div class="paper image">
+  <p><strong>Here's to another year of us being us - gossiping, stalking, and spilling tea like it's our job</strong></p>
+  <img src="images/1.jpg" style="padding-left: 25%;">
+
+</div>
+
+
+
+<div class="paper red">
+<p class="p1"> <strong>And my Favourite <strike>Person</strike>Joker</strong></p>
+<p class="p2"><strong>Just kidding ❤️ 😁</strong></p>
+</div>
+
+<div class="paper">
+<p class="p1"><strong>little did we know we'd become each other's human diaries 📓. It's only been 9 months, but it feels like a lifetime of friendship - how did that even happen?! </strong></p>
+  
+</div>
+
+<div class="paper">
+<p class="p1"><strong>Happiest Bday to my #1 human diary, gossip partner, and partner-in-crime! 🤪🔐 Thx for being the craziest, funniest, most awesome version of u! 🦄💖
+</strong></p>
+</div>
+<!-- partial -->
+  <script  src="./mobile.js"></script>
+
+</body>
+</html>
